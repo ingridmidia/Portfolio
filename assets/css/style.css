@@ -1,23 +1,24 @@
 :root {
-    --dark-purple:rgb(101, 39, 190);
+    --dark-purple: rgb(106, 62, 167);
     --light-purple: rgb(150, 129, 235);
     --neutral-purple: rgb(209, 203, 229);
-    --dark-teal: rgb(55,141,148);
+    --dark-teal: rgb(55, 141, 148);
     --light-teal: rgb(167, 237, 231);
+    --white: rgb(245, 243, 243);
 }
 
 * {
     box-sizing: border-box;
 }
 
-
 body {
-    background-color: rgb(245, 243, 243);
-    font-family: 'Courier New', Courier, monospace, serif;
+    background-color: var(--white);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
 }
 
 body h1 {
-    font-size: 200%;
+    font-size: 300%;
 }
 
 body h2 {
@@ -27,18 +28,16 @@ body h2 {
 header {
     display: flex;
     flex-wrap: wrap;
-    background-color: var(--neutral-purple);
+    background-color: var(--dark-purple);
     justify-content: space-between;
     padding: 15px 20px 8px 0;
     align-items: center;
 }
 
-header h1{
-    border: solid var(--dark-teal);
-    background-color: var(--dark-teal);
-    color: var(--neutral-purple);
-    /* font-weight: bolder; */
-    padding-left: 40px;
+header h1 {
+    background-color: var(--white);
+    color: var(--dark-purple);
+    padding: 0 10px 0 40px;
 }
 
 header nav ul li {
@@ -48,21 +47,57 @@ header nav ul li {
 }
 
 header a {
-    color: var(--dark-teal);
+    color: var(--white);
     font-size: 20px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    border-bottom: solid var(--white);
+    padding: 0 5px 0 5px;
 }
 
 .hero {
-    display:flex;
-    background-color: var(--light-purple);
+    display: flex;
+    background-color: var(--neutral-purple);
     justify-content: space-between;
 }
 
 .hero img {
     max-width: 25%;
+    padding: 10px 0 10px 40px;
 }
 
 .hero h2 {
     display: flex;
     align-items: flex-end;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--dark-purple);
+    max-height: 90px;
+    margin: 120px 50px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+#about-me,
+#work,
+#contact-me {
+    margin: 15px 50px 15px 60px;
+    display: flex;
+}
+
+#about-me h2,
+#work h2,
+#contact-me h2 {
+    font-size: 50px;
+    border-right: solid black;
+    justify-content: flex-start;
+    text-align: right;
+    padding-right: 10px;
+    min-width: 35%;
+}
+
+#about-me p,
+#work p,
+#contact-me p {
+    padding-left: 40px;
+    text-align: justify;
 }
