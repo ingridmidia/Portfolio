@@ -13,6 +13,7 @@
 
 body {
     background-color: rgb(245, 243, 243);
+    font-family: 'Courier New', Courier, monospace, serif;
 }
 
 body h1 {
@@ -28,7 +29,7 @@ header {
     flex-wrap: wrap;
     background-color: var(--neutral-purple);
     justify-content: space-between;
-    padding: 15px 20px 5px 0;
+    padding: 15px 20px 8px 0;
     align-items: center;
 }
 
@@ -36,16 +37,19 @@ header h1{
     border: solid var(--dark-teal);
     background-color: var(--dark-teal);
     color: var(--neutral-purple);
-    font-weight: bolder;
+    /* font-weight: bolder; */
     padding-left: 40px;
 }
 
 header nav ul li {
     display: inline-block;
+    justify-content: space-between;
+    padding-right: 15px;
 }
 
 header a {
     color: var(--dark-teal);
+    font-size: 20px;
 }
 
 .hero {
