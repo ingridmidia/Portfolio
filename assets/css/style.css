@@ -24,7 +24,6 @@ body h2 {
 
 header {
     display: flex;
-    flex-wrap: wrap;
     background-color: var(--dark-purple);
     justify-content: space-between;
     padding: 15px 20px 8px 0;
@@ -39,14 +38,12 @@ header h1 {
 
 header nav ul li {
     display: inline-block;
-    justify-content: space-between;
     padding-right: 15px;
 }
 
 header a {
     color: var(--white);
     font-size: 20px;
-    /* font-weight: bold; */
     text-decoration: none;
     border-bottom: solid var(--white);
     padding: 0 5px 0 5px;
@@ -119,7 +116,22 @@ header a {
     margin: 0;
 }
 
+#contact-me {
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 #contact-me ul {
-    padding-left: 40px;
-    text-align: justify;
+    margin: 0 60px 0 40px;
+}
+
+#contact-me ul li {
+    display: inline-block;
+    padding-right: 30px;
+    margin-right: 20px;
+    border-bottom: solid;
+    padding: 0 5px 0 5px;
+}
+#contact-me ul li a {
+    text-decoration: none;
 }
