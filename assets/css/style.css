@@ -77,16 +77,12 @@ header a {
     padding: 10px 10px 10px 10px;
 }
 
-#about-me,
-#work,
-#contact-me {
+.content {
     margin: 15px 50px 15px 60px;
     display: flex;
 }
 
-#about-me h2,
-#work h2,
-#contact-me h2 {
+.content h2 {
     font-size: 50px;
     border-right: solid black;
     justify-content: flex-start;
@@ -95,9 +91,17 @@ header a {
     min-width: 35%;
 }
 
-#about-me p,
-#work p,
-#contact-me p {
+#about-me p {
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#work img {
+    padding-left: 40px;
+    text-align: justify;
+}
+
+#contact-me ul {
     padding-left: 40px;
     text-align: justify;
 }
