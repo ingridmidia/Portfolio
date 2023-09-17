@@ -1,9 +1,6 @@
 :root {
     --dark-purple: rgb(106, 62, 167);
-    --light-purple: rgb(150, 129, 235);
     --neutral-purple: rgb(209, 203, 229);
-    --dark-teal: rgb(55, 141, 148);
-    --light-teal: rgb(167, 237, 231);
     --white: rgb(245, 243, 243);
 }
 
@@ -13,7 +10,7 @@
 
 body {
     background-color: var(--white);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
@@ -78,27 +75,48 @@ header a {
 }
 
 .content {
-    margin: 15px 50px 15px 60px;
+    margin: 15px 0px 0px 60px;
     display: flex;
 }
 
 .content h2 {
     font-size: 50px;
-    border-right: solid black;
-    justify-content: flex-start;
+    border-right: solid;
     text-align: right;
     padding-right: 10px;
-    min-width: 35%;
+    min-width: 25%;
 }
 
 #about-me p {
-    padding-left: 40px;
+    margin: 0 60px 0 40px;
     text-align: justify;
 }
 
-#work img {
-    padding-left: 40px;
-    text-align: justify;
+.project-images {
+    margin: 0 60px 0 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-images img {
+    border: solid 3px var(--neutral-purple);
+    max-width: 49.5%;
+}
+
+.project-images img:nth-child(even) {
+    margin-right: 0.5;
+    margin-top: 1%; 
+}
+
+.project-images img:nth-child(odd) {
+    margin-left: 0.5%;
+    margin-top: 1%;
+}
+
+.project-images img:first-child {
+    max-width: 100%;
+    margin: 0;
 }
 
 #contact-me ul {
