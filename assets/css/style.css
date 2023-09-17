@@ -12,6 +12,7 @@ body {
     background-color: var(--white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    color: rgb(79, 45, 127);
 }
 
 body h1 {
@@ -20,6 +21,14 @@ body h1 {
 
 body h2 {
     font-size: 150%;
+}
+
+body h3 {
+    font-size: 100%;
+}
+
+body h4 {
+    font-size: 80%;
 }
 
 header {
@@ -89,7 +98,27 @@ header a {
     text-align: justify;
 }
 
-.project-images {
+.first-project-image {
+    background-image: url(../images/horiseon-website.png);
+    width: 100%;
+    height: 17rem;
+    margin: 0 60px 0 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: relative;
+    border: solid 3px var(--neutral-purple);
+}
+
+.first-project-text {
+    background-color: var(--neutral-purple);
+    color: var(--dark-purple);
+    width: 10%;
+    position: absolute;
+    bottom: 5%;
+}
+
+/* .project-images {
     margin: 0 60px 0 40px;
     display: flex;
     flex-wrap: wrap;
@@ -114,7 +143,7 @@ header a {
 .project-images img:first-child {
     max-width: 100%;
     margin: 0;
-}
+} */
 
 #contact-me {
     align-items: center;
