@@ -65,21 +65,22 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .hero img {
     display: flex;
-    max-width: 25%;
+    max-width: 38%;
     padding: 10px 0 10px 40px;
 }
 
 .hero h2 {
     display: flex;
-    /* align-items: flex-end; */
     text-align: center;
     background-color: var(--white);
     color: var(--dark-purple);
-    margin: 300px 50px 10px 10px;
+    margin-bottom: 3rem;
+    margin-right: 1rem;
     padding: 10px 10px 10px 10px;
 }
 
@@ -166,6 +167,10 @@ header a {
         padding: 0;
         width: 100%;
         justify-content: center;
+    }
+
+    .hero img {
+        max-width: 50%;
     }
 }
 
