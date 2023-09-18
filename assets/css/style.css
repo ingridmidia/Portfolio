@@ -33,6 +33,7 @@ body h4 {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--dark-purple);
     justify-content: space-between;
     padding: 15px 20px 8px 0;
@@ -43,6 +44,7 @@ header h1 {
     background-color: var(--white);
     color: var(--dark-purple);
     padding: 0 10px 0 40px;
+    display: flex;
 }
 
 header nav ul li {
@@ -59,24 +61,25 @@ header a {
 }
 
 .hero {
+    background-image: url(../images/heroimage.png);
     display: flex;
-    background-color: var(--neutral-purple);
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .hero img {
+    display: flex;
     max-width: 25%;
     padding: 10px 0 10px 40px;
 }
 
 .hero h2 {
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     text-align: center;
     background-color: var(--white);
     color: var(--dark-purple);
-    max-height: 90px;
-    margin: 120px 50px 10px 10px;
+    margin: 300px 50px 10px 10px;
     padding: 10px 10px 10px 10px;
 }
 
@@ -91,6 +94,8 @@ header a {
     text-align: right;
     padding-right: 10px;
     min-width: 25%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #about-me p {
@@ -124,7 +129,7 @@ header a {
     background-color: var(--neutral-purple);
     color: var(--dark-purple);
     position: absolute;
-    bottom: 1rem;
+    bottom: 15px;
     padding: 1%;
     margin-left: 0;
 }
@@ -132,10 +137,12 @@ header a {
 #contact-me {
     align-items: center;
     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #contact-me ul {
-    margin: 0 60px 0 40px;
+    margin: 0 60px 0 40px; 
 }
 
 #contact-me ul li {
@@ -148,4 +155,34 @@ header a {
 
 #contact-me ul li a {
     text-decoration: none;
+}
+
+@media screen and (max-width:980px) {
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+    header h1 {
+        padding: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* images list */
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero img {
+        max-width: 90%;
+        padding-left: 0px;
+    }
+
+    .hero h2 {
+        margin-top: 40px;
+    }
 }
