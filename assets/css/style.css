@@ -49,15 +49,15 @@ header h1 {
 
 header nav ul li {
     display: inline-block;
-    padding-right: 15px;
+    padding-right: 1rem;
 }
 
 header a {
     color: var(--white);
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     border-bottom: solid var(--white);
-    padding: 0 5px 0 5px;
+    padding: 0 0.5rem 0 0.5rem;
 }
 
 .hero {
@@ -71,7 +71,7 @@ header a {
 .hero img {
     display: flex;
     max-width: 38%;
-    padding: 10px 0 10px 40px;
+    padding: 1rem 0 1rem 3rem;
 }
 
 .hero h2 {
@@ -81,7 +81,7 @@ header a {
     color: var(--dark-purple);
     margin-bottom: 3rem;
     margin-right: 1rem;
-    padding: 10px 10px 10px 10px;
+    padding: 0.5rem;
 }
 
 .content {
