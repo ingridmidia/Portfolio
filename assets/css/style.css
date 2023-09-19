@@ -1,3 +1,4 @@
+/* Creates custom colors there are used throughout the page */
 :root {
     --dark-purple: rgb(106, 62, 167);
     --darker-purple: rgb(79, 45, 127);
@@ -5,10 +6,12 @@
     --white: rgb(245, 243, 243);
 }
 
+/* Adjust element size including border and padding */
 * {
     box-sizing: border-box;
 }
 
+/* Defines properties in the whole body */
 body {
     background-color: var(--white);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -16,25 +19,24 @@ body {
     color: var(--darker-purple);
 }
 
-body h1 {
+h1 {
     font-size: 300%;
 }
 
-body h2 {
+h2 {
     font-size: 150%;
 }
 
-body h3 {
+h3 {
     font-size: 100%;
 }
 
-body h4 {
+h4 {
     font-size: 80%;
 }
 
 header {
     display: flex;
-    flex-wrap: wrap;
     background-color: var(--dark-purple);
     justify-content: space-between;
     align-items: center;
@@ -64,19 +66,16 @@ header a {
 .hero {
     background-image: url(../images/heroimage.png);
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-end;
 }
 
 .hero img {
-    display: flex;
     max-width: 38%;
     padding: 1rem 0 1rem 3rem;
 }
 
 .hero h2 {
-    display: flex;
     text-align: center;
     background-color: var(--white);
     color: var(--dark-purple);
@@ -114,6 +113,7 @@ header a {
 
 .project-image {
     position: relative;
+    /* Leaves 0.5% space between images */
     width: 49.5%;
 }
 
@@ -122,6 +122,7 @@ header a {
     width: 100%;
 }
 
+/* Makes first image bigger than others */
 .project-image:first-child {
     width: 100%;
 }
@@ -135,22 +136,18 @@ header a {
     margin-left: 0;
 }
 
+/* Add space before the end of page */
 #contact-me {
-    
     margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #contact-me ul {
     padding: 0 60px 0 40px;
     width: 85%;
-    align-items: center;
 }
 
 #contact-me ul li {
     display: inline-block;
-    padding-right: 30px;
     margin-right: 20px;
     border-bottom: solid var(--darker-purple);
     padding: 0 5px 0 5px;
@@ -160,7 +157,9 @@ header a {
     text-decoration: none;
 }
 
+/* Responsiveness for mid-size screens */
 @media screen and (max-width:980px) {
+
     header {
         flex-direction: column;
     }
@@ -188,6 +187,7 @@ header a {
         margin-bottom: 1rem;
         padding-right: 0;
     }
+
     #about-me p {
         padding: 0;
         width: 90%;
@@ -204,6 +204,7 @@ header a {
     }
 }
 
+/* Responsiveness for smaller screens */
 @media screen and (max-width:768px) {
 
     .hero {
