@@ -94,21 +94,18 @@ header a {
     font-size: 2rem;
     border-right: solid var(--darker-purple);
     text-align: right;
-    padding-right: 10px;
-    width: 25%;
-    word-wrap: break-word;
-    display: flex;
-    flex-wrap: wrap;
+    padding-right: 1rem;
+    width: 15%;
 }
 
 #about-me p {
     padding: 0 60px 0 40px;
     text-align: justify;
-    width: 75%;
+    width: 85%;
 }
 
 .images-container {
-    width: 75%;
+    width: 85%;
     padding: 0 60px 0 40px;
     display: flex;
     flex-wrap: wrap;
@@ -139,7 +136,7 @@ header a {
 }
 
 #contact-me {
-    align-items: center;
+    
     margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -147,14 +144,15 @@ header a {
 
 #contact-me ul {
     padding: 0 60px 0 40px;
-    width: 75%;
+    width: 85%;
+    align-items: center;
 }
 
 #contact-me ul li {
     display: inline-block;
     padding-right: 30px;
     margin-right: 20px;
-    border-bottom: solid;
+    border-bottom: solid var(--darker-purple);
     padding: 0 5px 0 5px;
 }
 
@@ -177,6 +175,33 @@ header a {
     .hero img {
         max-width: 50%;
     }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content h2 {
+        border-bottom: solid var(--darker-purple);
+        border-right: 0;
+        width: 90%;
+        text-align: left;
+        margin-bottom: 1rem;
+        padding-right: 0;
+    }
+    #about-me p {
+        padding: 0;
+        width: 90%;
+    }
+
+    .images-container {
+        padding: 0;
+        width: 90%;
+    }
+
+    #contact-me ul {
+        padding: 0;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -195,4 +220,13 @@ header a {
     .hero h2 {
         margin-top: 40px;
     }
+
+    .project-image {
+        width: 100%;
+    }
+
+    #contact-me ul li {
+        display: table;
+    }
+
 }
